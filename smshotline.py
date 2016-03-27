@@ -21,3 +21,4 @@ def makemessagewebready(msg):   # This converts the message into a webfriendly U
 # * Allow hotline responders to 'claim' a case and then establish a conversation
 #   between the user and the responder who claimed them
 # * Add ability to terminate this conversation
+# Script plugs into Receiving API and sending API to run the program
