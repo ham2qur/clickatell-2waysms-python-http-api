@@ -1,3 +1,4 @@
+# The following is code written by Gatlin Newhouse <- DO NOT REMOVE THIS
 from flask import Flask, request
 from smshotline import gateway
 app = Flask(__name__)
