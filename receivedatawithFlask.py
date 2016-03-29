@@ -29,8 +29,11 @@ def reasonAboutIncomingMessage(httppoststring)
     else if "CLAIM" in message:
         //establish proxy convo between user and claimer on seperate thread
     else:
+        message = message + "Their phone number is: " + formatphonenumber(phonenumber)
         for s in subscriberlist:
             gw.send(phonenumber, message)
         return "OK"
 def decodewebmessage(msg):   # This converts the message from webfriendly URL message into plaintext
     return msg.replace("%20", " ")
+def formatphonenumber(nmbr):
+    return '({}) {}-{}'.format(phone[1:4], phone[4:7], phone[7:])
