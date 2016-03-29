@@ -15,9 +15,6 @@ class gateway:
 def makemessagewebready(msg):   # This converts the message into a webfriendly URL message
     return msg.replace(" ", "%20")
 # To Do:
-# * Make it accept incoming messages
-# * Program commands to add/remove hotline responders to/from a list
-# * Forward all other messages without commands to the hotline list
 # * Allow hotline responders to 'claim' a case and then establish a conversation
 #   between the user and the responder who claimed them
 # * Add ability to terminate this conversation
